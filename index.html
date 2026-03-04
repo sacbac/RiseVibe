@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rise Mood Vault</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="rise-container">
+        <header>
+            <div class="logo">RISE<span>VIBE</span></div>
+            <button id="connectBtn" class="connect-btn">Connect Rise Wallet</button>
+            <div id="walletDisplay" class="wallet-pill hidden"></div>
+        </header>
+
+        <main>
+            <div class="hero">
+                <h1>The On-Chain Mood Vault</h1>
+                <p>Select a digital card to anchor your current energy to the Rise Network.</p>
+            </div>
+
+            <div class="mood-grid">
+                <div class="card" onclick="playGame(0)"><div class="card-inner">?</div></div>
+                <div class="card" onclick="playGame(1)"><div class="card-inner">?</div></div>
+                <div class="card" onclick="playGame(2)"><div class="card-inner">?</div></div>
+                <div class="card" onclick="playGame(3)"><div class="card-inner">?</div></div>
+                <div class="card" onclick="playGame(4)"><div class="card-inner">?</div></div>
+                <div class="card" onclick="playGame(5)"><div class="card-inner">?</div></div>
+            </div>
+
+            <div id="statusBox" class="status-panel">Waiting for network connection...</div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
